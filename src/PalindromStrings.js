@@ -10,6 +10,7 @@ export default class PalindromStrings extends React.PureComponent {
     inputString = (e) => {
         this.setState({ inputString: e.target.value })
     }
+    //given string is palindrom or not
     palindrom = (str) => {
         let re = /[\W_]/g;
         let lowerRegStr = str.toLowerCase().replace(re, '');
@@ -24,7 +25,7 @@ export default class PalindromStrings extends React.PureComponent {
         result.map((item) => { console.log(item.join(' ')) })
         this.setState({ result: result, printStrings: true })
     }
-
+//find all partion
     palindromsubString = (s) => {
 
         const P = [];
